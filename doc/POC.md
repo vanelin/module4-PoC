@@ -3,7 +3,7 @@
 # create k3d cluster
 k3d cluster create argo
 
-# install core ArgoCD components only:
+# install ArgoCD components:
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
